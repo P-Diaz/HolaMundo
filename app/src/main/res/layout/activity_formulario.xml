@@ -7,22 +7,6 @@
     tools:context=".Formulario">
 
     <TextView
-        android:id="@+id/lblTitulo"
-        android:layout_width="364dp"
-        android:layout_height="38dp"
-        android:fontFamily="monospace"
-        android:text="Datos Personales"
-        android:textAlignment="center"
-        android:textColor="#3C397A"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.34"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.044" />
-
-    <TextView
         android:id="@+id/lblNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -54,7 +38,7 @@
         android:id="@+id/lblDireccion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="256dp"
         android:text="Dirección: "
         android:textColor="#3C397A"
@@ -75,7 +59,8 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/txtCorreo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/lblCedula"
@@ -93,9 +78,9 @@
 
     <EditText
         android:id="@+id/txtNombres"
-        android:layout_width="246dp"
-        android:layout_height="28dp"
-        android:layout_marginStart="132dp"
+        android:layout_width="244dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="128dp"
         android:layout_marginTop="116dp"
         android:ems="10"
         android:inputType="text"
@@ -105,12 +90,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/lblTitulo"
+        android:layout_width="364dp"
+        android:layout_height="38dp"
+        android:fontFamily="monospace"
+        android:text="Datos Personales"
+        android:textAlignment="center"
+        android:textColor="#3C397A"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.062" />
+
     <EditText
         android:id="@+id/txtApellidos"
         android:layout_width="246dp"
-        android:layout_height="28dp"
+        android:layout_height="45dp"
         android:layout_marginStart="132dp"
-        android:layout_marginTop="168dp"
+        android:layout_marginTop="184dp"
         android:ems="10"
         android:inputType="text"
         android:textAlignment="viewStart"
@@ -122,9 +123,9 @@
     <EditText
         android:id="@+id/txtCedula"
         android:layout_width="246dp"
-        android:layout_height="28dp"
-        android:layout_marginStart="132dp"
-        android:layout_marginTop="212dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="252dp"
         android:ems="10"
         android:inputType="text"
         android:textAlignment="viewStart"
@@ -136,9 +137,9 @@
     <EditText
         android:id="@+id/txtDireccion"
         android:layout_width="246dp"
-        android:layout_height="28dp"
+        android:layout_height="45dp"
         android:layout_marginStart="132dp"
-        android:layout_marginTop="260dp"
+        android:layout_marginTop="320dp"
         android:ems="10"
         android:inputType="text"
         android:textAlignment="viewStart"
@@ -150,9 +151,9 @@
     <EditText
         android:id="@+id/txtCorreo"
         android:layout_width="246dp"
-        android:layout_height="28dp"
+        android:layout_height="45dp"
         android:layout_marginStart="132dp"
-        android:layout_marginTop="308dp"
+        android:layout_marginTop="384dp"
         android:ems="10"
         android:inputType="text"
         android:textAlignment="viewStart"
