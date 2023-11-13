@@ -26,8 +26,14 @@ public class Formulario extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String Nombre = edNombres.getText().toString();
-                if (!Nombre.isEmpty()){
-                    Toast.makeText(Formulario.this, "Datos Ingresados Correctamente", Toast.LENGTH_SHORT).show();
+                String Apellido = edApellidos.getText().toString();
+                String Cedula = edcedula.getText().toString();
+                String Direccion = edDireccion.getText().toString();
+                String Correo = edCorreo.getText().toString();
+                if (!Nombre.isEmpty() && !Apellido.isEmpty() && !Cedula.isEmpty() && !Direccion.isEmpty() && !Correo.isEmpty()){
+                    Toast.makeText(Formulario.this, "Datos Ingresados Correctamente", Toast.LENGTH_LONG).show();
+                } else {
+                    Toast.makeText(Formulario.this, "Ingrese todos los campos", Toast.LENGTH_LONG).show();
                 }
             }
         });
